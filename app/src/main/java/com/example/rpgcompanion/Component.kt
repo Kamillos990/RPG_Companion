@@ -1,6 +1,4 @@
-package com.example.swapp
-
-import com.example.swapp.Fragments.FragGeneral
+package com.example.rpgcompanion
 import dagger.Component
 import dagger.Subcomponent
 

@@ -1,6 +1,6 @@
-package com.example.rpgcreator.util
+package com.example.rpgcompanion
 
-class Constants {
+class Constant{
     companion object {
         const val BASE_URL = "http://www.dnd5eapi.co/"
     }

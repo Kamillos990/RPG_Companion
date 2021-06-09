@@ -1,13 +1,9 @@
-package com.example.swapp
+package com.example.rpgcompanion
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.example.charactermaster.Fragments.*
-import com.example.charactermaster.Hero
-import com.example.swapp.Fragments.FragGeneral
-
 
 
 

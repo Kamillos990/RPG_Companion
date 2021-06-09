@@ -1,4 +1,4 @@
-package com.example.swapp
+package com.example.rpgcompanion
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.example.charactermaster.Hero
 import com.example.rpgcompanion.R
 import kotlinx.android.synthetic.main.list_view_character.view.*
 

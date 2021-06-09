@@ -1,4 +1,4 @@
-package com.example.charactermaster
+package com.example.rpgcompanion
 
 import android.os.Parcel
 import android.os.Parcelable

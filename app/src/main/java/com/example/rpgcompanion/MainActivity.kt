@@ -1,10 +1,10 @@
-package com.example.swapp
-
+package com.example.rpgcompanion
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.example.rpgcompanion.R
+
+
 
 class MainActivity : AppCompatActivity() {
 

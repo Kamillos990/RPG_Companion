@@ -1,15 +1,24 @@
-package com.example.swapp
-
-import android.content.Context
+package com.example.rpgcompanion
 import android.hardware.Sensor
 import android.hardware.SensorManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.charactermaster.Hero
-import com.example.rpgcompanion.R
+import android.view.View
+import android.widget.ArrayAdapter
+import android.widget.Spinner
+import android.widget.Toast
+import androidx.activity.viewModels
+import dagger.hilt.android.AndroidEntryPoint
+
 import kotlinx.android.synthetic.main.activity_character_details.*
+import kotlinx.android.synthetic.main.character_details_activity.*
+import kotlinx.android.synthetic.main.fragment_character.*
+
 
 class CharacterDetailsActivity : AppCompatActivity() {
+
+
+
 
     var character: Hero? = null
     private lateinit var sensorManager: SensorManager
@@ -19,7 +28,6 @@ class CharacterDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_character_details)
 
-        characterComponent = (applicationContext as MyApplication).appComponent.create()
 
         character = intent.getParcelableExtra<Hero>("EXTRA_CHAR")
 
@@ -28,5 +36,9 @@ class CharacterDetailsActivity : AppCompatActivity() {
         viewPager?.adapter = fragmentAdapter
         tabs.setupWithViewPager(viewPager)
     }
+    
+
 
 }
+
+

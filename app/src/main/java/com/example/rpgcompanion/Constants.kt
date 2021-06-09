@@ -1,4 +1,4 @@
-package com.example.swapp
+package com.example.rpgcompanion
 
 class Constants {
     companion object{
