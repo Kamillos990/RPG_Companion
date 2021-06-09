@@ -8,193 +8,153 @@
 
 
     <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
+        android:id="@+id/hp"
+        android:layout_width="256dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="460dp"
-        android:ems="10"
-        android:hint="Pochodzenie"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/podstawowe_informacje" />
-
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="28dp"
-        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/textView8"
-        android:autofillHints="" />
+        app:layout_constraintEnd_toEndOf="@+id/spinner_alignments"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_alignments" />
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="79dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="144dp"
-        android:hint="@string/charakter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editName" />
+        android:id="@+id/lblHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hp"
+        app:layout_constraintBottom_toBottomOf="@+id/hp"
+        app:layout_constraintEnd_toEndOf="@+id/lblAlignment"
+        app:layout_constraintStart_toStartOf="@+id/lblAlignment"
+        app:layout_constraintTop_toTopOf="@+id/hp" />
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_width="79dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="144dp"
-        android:hint="@string/punkty_życia"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
+        android:id="@+id/lblName"
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/name"
+        app:layout_constraintBottom_toBottomOf="@+id/editName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editName" />
+        app:layout_constraintTop_toTopOf="@+id/editName"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <TextView
+        android:id="@+id/lblAlignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alignment"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_alignments"
+        app:layout_constraintEnd_toEndOf="@+id/lblClass"
+        app:layout_constraintStart_toStartOf="@+id/lblClass"
+        app:layout_constraintTop_toTopOf="@+id/spinner_alignments" />
+
+    <TextView
+        android:id="@+id/lblClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtClass"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_classes"
+        app:layout_constraintEnd_toEndOf="@+id/lblRace"
+        app:layout_constraintStart_toStartOf="@+id/lblRace"
+        app:layout_constraintTop_toTopOf="@+id/spinner_classes"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lblRace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/race"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_races"
+        app:layout_constraintEnd_toEndOf="@+id/lblName"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="@+id/lblName"
+        app:layout_constraintTop_toTopOf="@+id/spinner_races"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Spinner
         android:id="@+id/spinner_alignments"
-        android:layout_width="28dp"
-        android:layout_height="35dp"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toTopOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="79dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="228dp"
-        android:hint="@string/poziom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editName" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="79dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="228dp"
-        android:hint="@string/poziom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editName" />
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_classes"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_classes" />
 
     <EditText
-        android:id="@+id/editText5"
-        android:layout_width="28dp"
-        android:layout_height="35dp"
+        android:id="@+id/lvl"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toTopOf="@+id/textView10" />
+        app:layout_constraintEnd_toEndOf="@+id/xp"
+        app:layout_constraintTop_toBottomOf="@+id/xp" />
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="79dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="228dp"
-        android:hint="@string/poziom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editName" />
+        android:id="@+id/lblLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/level"
+        app:layout_constraintBottom_toBottomOf="@+id/xp"
+        app:layout_constraintEnd_toEndOf="@+id/lblHP"
+        app:layout_constraintStart_toStartOf="@+id/lblHP"
+        app:layout_constraintTop_toTopOf="@+id/xp" />
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="79dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="228dp"
-        android:hint="@string/xp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editName" />
+        android:id="@+id/lblXP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xp"
+        app:layout_constraintBottom_toBottomOf="@+id/lvl"
+        app:layout_constraintEnd_toEndOf="@+id/lblLevel"
+        app:layout_constraintStart_toStartOf="@+id/lblLevel"
+        app:layout_constraintTop_toTopOf="@+id/lvl" />
+
 
     <EditText
-        android:id="@+id/editText6"
-        android:layout_width="28dp"
-        android:layout_height="35dp"
+        android:id="@+id/xp"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="@+id/textView6" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="79dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="60dp"
-        android:hint="@string/rasa"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editName" />
+        app:layout_constraintEnd_toEndOf="@+id/hp"
+        app:layout_constraintTop_toBottomOf="@+id/hp" />
 
     <Spinner
         android:id="@+id/spinner_races"
-        android:layout_width="28dp"
-        android:layout_height="35dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
-
-
-    <TextView
-        android:id="@+id/podstawowe_informacje"
-        android:layout_width="wrap_content"
+        android:layout_width="256dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:text="@string/podstawowe_informacje"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="79dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="60dp"
-        android:hint="@string/klasa"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/editName"
         app:layout_constraintTop_toBottomOf="@+id/editName" />
 
     <Spinner
         android:id="@+id/spinner_classes"
-        android:layout_width="28dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="60dp"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/editName" />
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_races"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_races" />
 
     <EditText
         android:id="@+id/editName"
-        android:layout_width="wrap_content"
+        android:layout_width="256dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Imię"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.825"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/podstawowe_informacje" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="79dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="60dp"
-        android:hint="Rasa"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editName" />
-
-
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="115dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

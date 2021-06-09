@@ -8,12 +8,12 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class Hero(
     var name: String? = "",
-    val image: String? = "",
+    var charRace: String? = "",
     val charClass: String? = "",
+    var charAlignment: String? = "",
+    var hp: Int = 0,
     var level: Int = 0,
     var xp: Int = 0,
-    var alignment: String? = "",
-    var race: String? = "",
     val background: String? = "",
     val appearance: String? = "",
     val traits: String? = "",
@@ -25,10 +25,10 @@ data class Hero(
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
+        parcel.readString(),
         parcel.readInt(),
         parcel.readInt(),
-        parcel.readString(),
-        parcel.readString(),
+        parcel.readInt(),
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
@@ -44,12 +44,12 @@ data class Hero(
     companion object : Parceler<Hero> {
         override fun Hero.write(parcel: Parcel, flags: Int) {
             parcel.writeString(name)
-            parcel.writeString(image)
+            parcel.writeString(charRace)
             parcel.writeString(charClass)
+            parcel.writeString(charAlignment)
+            parcel.writeInt(hp)
             parcel.writeInt(level)
             parcel.writeInt(xp)
-            parcel.writeString(alignment)
-            parcel.writeString(race)
             parcel.writeString(background)
             parcel.writeString(appearance)
             parcel.writeString(traits)

@@ -111,7 +111,7 @@
     <string name="saving_throw">Saving Throw</string>
     <string name="modifier">Modifier</string>
     <string name="score">Score</string>
-    <string name="details" />
+    <string name="details">Details</string>
 
 
 </resources>

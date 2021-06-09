@@ -1,6 +1,5 @@
-//package com.example.rpgcompanion
-////
-////data class Alignments(
-////    val count: Int,
-////    val results: List<Result>
-////)
+package com.example.rpgcompanion
+
+data class Alignments(
+    val results: List<Result>
+)
