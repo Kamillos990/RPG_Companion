@@ -27,6 +27,12 @@ class CharacterAdapter(private val context: MainActivity, private val characters
 
 
 
+        holder.btnDetails.setOnClickListener {
+            val characterIntent: Intent = Intent(context, CharacterDetailsActivity::class.java).apply {
+                putExtra("EXTRA_CHAR", characters[position])
+            }
+            startActivity(context, characterIntent, null)
+        }
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -34,5 +40,6 @@ class CharacterAdapter(private val context: MainActivity, private val characters
         val charRace = view.lblRace
         val charClass = view.lblClass
         val charAlignment = view.lblAlignment
+        val btnDetails = view.btnDetails
     }
 }
