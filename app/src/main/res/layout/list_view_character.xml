@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/lblName"
-        android:layout_width="272dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,7 +18,7 @@
 
     <TextView
         android:id="@+id/lblRace"
-        android:layout_width="272dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/lblName"
@@ -27,7 +27,7 @@
 
     <TextView
         android:id="@+id/lblClass"
-        android:layout_width="272dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/lblRace"
@@ -36,7 +36,7 @@
 
     <TextView
         android:id="@+id/lblAlignment"
-        android:layout_width="272dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ellipsize="end"
         android:maxLines="4"
@@ -48,7 +48,7 @@
 
     <Button
         android:id="@+id/btnDetails"
-        android:layout_width="272dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/details"
         app:layout_constraintBottom_toBottomOf="parent"

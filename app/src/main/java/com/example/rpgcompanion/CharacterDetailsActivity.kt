@@ -41,7 +41,10 @@ class CharacterDetailsActivity : AppCompatActivity() {
     }
 
     fun fabSave(view : View?) {
-        val char = Hero(editName.text.toString(), spinner_races.selectedItem.toString(), spinner_classes.selectedItem.toString(), spinner_alignments.selectedItem.toString(), Integer.parseInt(hp.text.toString()), Integer.parseInt(lvl.text.toString()), Integer.parseInt(xp.text.toString()), txtBackground.text.toString(), txtAppearance.text.toString(), txtTraits.text.toString(), txtIdeals.text.toString(), txtBonds.text.toString(), txtFlaws.text.toString())
+        val char = Hero(editName.text.toString(), spinner_races.selectedItem.toString(), spinner_classes.selectedItem.toString(),
+                        spinner_alignments.selectedItem.toString(), Integer.parseInt(hp.text.toString()), Integer.parseInt(lvl.text.toString()),
+                        Integer.parseInt(xp.text.toString()), txtBackground.text.toString(), txtAppearance.text.toString(), txtTraits.text.toString(),
+                        txtIdeals.text.toString(), txtBonds.text.toString(), txtFlaws.text.toString())
         val storage: Storage = Storage(this, char.name!!)
         storage.saveCharacter(char)
 

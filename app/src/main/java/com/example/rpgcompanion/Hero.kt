@@ -19,46 +19,46 @@ data class Hero(
     val traits: String? = "",
     val ideals: String? = "",
     val bonds: String? = "",
-    val flaws: String? = ""
-) : Parcelable {
-    constructor(parcel: Parcel): this(
-        parcel.readString(),
-        parcel.readString(),
-        parcel.readString(),
-        parcel.readString(),
-        parcel.readInt(),
-        parcel.readInt(),
-        parcel.readInt(),
-        parcel.readString(),
-        parcel.readString(),
-        parcel.readString(),
-        parcel.readString(),
-        parcel.readString(),
-        parcel.readString()
-    )
-
-    override fun describeContents(): Int {
-        return 0
-    }
-
-    companion object : Parceler<Hero> {
-        override fun Hero.write(parcel: Parcel, flags: Int) {
-            parcel.writeString(name)
-            parcel.writeString(charRace)
-            parcel.writeString(charClass)
-            parcel.writeString(charAlignment)
-            parcel.writeInt(hp)
-            parcel.writeInt(level)
-            parcel.writeInt(xp)
-            parcel.writeString(background)
-            parcel.writeString(appearance)
-            parcel.writeString(traits)
-            parcel.writeString(ideals)
-            parcel.writeString(bonds)
-            parcel.writeString(flaws)
-        }
-        override fun create(parcel: Parcel): Hero {
-            return Hero(parcel)
-        }
-    }
-}
+    val flaws: String? = ""):Parcelable
+//) : Parcelable {
+//    constructor(parcel: Parcel): this(
+//        parcel.readString(),
+//        parcel.readString(),
+//        parcel.readString(),
+//        parcel.readString(),
+//        parcel.readInt(),
+//        parcel.readInt(),
+//        parcel.readInt(),
+//        parcel.readString(),
+//        parcel.readString(),
+//        parcel.readString(),
+//        parcel.readString(),
+//        parcel.readString(),
+//        parcel.readString()
+//    )
+//
+//    override fun describeContents(): Int {
+//        return 0
+//    }
+//
+//    companion object : Parceler<Hero> {
+//        override fun Hero.write(parcel: Parcel, flags: Int) {
+//            parcel.writeString(name)
+//            parcel.writeString(charRace)
+//            parcel.writeString(charClass)
+//            parcel.writeString(charAlignment)
+//            parcel.writeInt(hp)
+//            parcel.writeInt(level)
+//            parcel.writeInt(xp)
+//            parcel.writeString(background)
+//            parcel.writeString(appearance)
+//            parcel.writeString(traits)
+//            parcel.writeString(ideals)
+//            parcel.writeString(bonds)
+//            parcel.writeString(flaws)
+//        }
+//        override fun create(parcel: Parcel): Hero {
+//            return Hero(parcel)
+//        }
+//    }
+//}
